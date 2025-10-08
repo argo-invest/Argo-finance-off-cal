@@ -1,0 +1,47 @@
+<div class="language-switcher">
+    <select id="lang-selector" onchange="switchLanguage(this.value)">
+        <option value="tr">Türkçe</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="ar">العربية (Arabic)</option>
+        <option value="ru">Русский (Russian)</option>
+        <option value="fr">Français</option>
+    </select>
+</div>
+<h1 data-lang="tr">Geleceğinizi Şekillendiren Yatırım Danışmanlığı</h1>
+
+<h1 data-lang="en" style="display:none;">Investment Consultancy Shaping Your Future</h1>
+
+<h1 data-lang="ar" dir="rtl" style="display:none;">استشارات استثمارية تشكل مستقبلك</h1>
+<script>
+    // Varsayılan dili 'tr' olarak ayarlayın
+    const defaultLang = 'tr';
+
+    function switchLanguage(lang) {
+        // Tüm dil içeriği elemanlarını seç
+        const elements = document.querySelectorAll('[data-lang]');
+        
+        // Her elemanı döngüye al
+        elements.forEach(element => {
+            // Eğer elemanın data-lang etiketi seçilen dile eşitse
+            if (element.getAttribute('data-lang') === lang) {
+                // Görünür yap
+                element.style.display = ''; 
+                // Arapça için okuma yönünü ayarla (rtl = right to left)
+                if (lang === 'ar') {
+                    document.body.dir = 'rtl';
+                } else {
+                    document.body.dir = 'ltr';
+                }
+            } else {
+                // Değilse gizle
+                element.style.display = 'none';
+            }
+        });
+    }
+
+    // Sayfa yüklendiğinde varsayılan dili göster
+    document.addEventListener('DOMContentLoaded', () => {
+        switchLanguage(defaultLang);
+    });
+</script>
