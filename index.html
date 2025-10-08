@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argo Yatırım - Ufuk Kaplan</title>
     <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
-        header { background: #0d47a1; color: #fff; padding: 40px 0; text-align:center; }
-        header h1 { margin:0; font-size:2.5em; }
-        header p { font-size:1.2em; }
-        section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-        h2 { color: #0d47a1; margin-bottom:20px; }
-        .content { margin-bottom:30px; }
-        footer { background: #222; color: #fff; text-align:center; padding: 20px 0; }
+        body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#f4f4f4; }
+        header { background: url('images/hero.jpg') no-repeat center center/cover; color: #fff; padding: 100px 20px; text-align:center; }
+        header h1 { margin:0; font-size:3em; text-shadow: 2px 2px 4px #000; }
+        header p { font-size:1.5em; text-shadow: 1px 1px 3px #000; }
+        section { padding: 50px 20px; max-width: 1000px; margin: auto; background:#fff; margin-bottom:30px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
+        h2 { color: #0d47a1; margin-bottom:20px; text-align:center; }
+        .content { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; margin-bottom:30px; }
+        .content img { max-width:45%; border-radius:10px; margin-bottom:20px; }
+        .text { max-width:50%; }
+        .stats { display:flex; justify-content:space-around; margin-top:20px; }
+        .stat { background:#0d47a1; color:#fff; padding:20px; border-radius:10px; text-align:center; flex:1; margin:10px; }
         .highlight { color:#e91e63; font-weight:bold; }
+        footer { background: #222; color: #fff; text-align:center; padding: 20px 0; }
+        @media(max-width:768px) { .content { flex-direction:column; } .content img, .text { max-width:100%; } }
     </style>
 </head>
 <body>
@@ -26,25 +31,51 @@
 <section>
     <h2>Ufuk Kaplan Hakkında</h2>
     <div class="content">
-        <p>Ufuk Kaplan, 36 yaşında, 18 yaşında Hollanda'ya gelmiş ve üniversitede 4 yıl <strong>Yatırım ve Finans</strong> eğitimi tamamlamış, 3 yıl yüksek lisans yapmış bir yatırım uzmanıdır. Toplamda <strong>10 yıllık deneyime</strong> sahip olup, 9 yıldır profesyonel olarak piyasada yer almaktadır.</p>
-        <p>QNB Finans Bankası'nda yatırım ve portföy danışmanlığı yapmış, 2024 yılında evlenmiş, 2025 yılında bir şirket sahibi olmuştur. Ortalama yönettiği yatırım şu anda <strong>36 milyon USD</strong> üzerindedir.</p>
+        <img src="images/ufuk.jpg" alt="Ufuk Kaplan">
+        <div class="text">
+            <p>Ufuk Kaplan, 36 yaşında, 18 yaşında Hollanda'ya gelmiş ve üniversitede 4 yıl <strong>Yatırım ve Finans</strong> eğitimi tamamlamış, 3 yıl yüksek lisans yapmış bir yatırım uzmanıdır. Toplamda <strong>10 yıllık deneyime</strong> sahip olup, 9 yıldır profesyonel olarak piyasada yer almaktadır.</p>
+            <p>QNB Finans Bankası'nda yatırım ve portföy danışmanlığı yapmış, 2024 yılında evlenmiş, 2025 yılında bir şirket sahibi olmuştur. Ortalama yönettiği yatırım şu anda <strong>36 milyon USD</strong> üzerindedir.</p>
+        </div>
     </div>
 </section>
 
 <section>
     <h2>Argo Yatırım</h2>
     <div class="content">
-        <p>Argo Yatırım, <strong>10.10.2016</strong> tarihinde Hollanda'nın <strong>Cop van Zuit</strong> şehrinde kurulmuştur. 2017 yılında Orta Doğu hakimiyeti için bir ofis de Dubai'de açmıştır.</p>
-        <p>Ufuk Kaplan, Londra borsasına hakim olmasına rağmen tüm dünyadaki borsaları takip etmektedir. Ekibinde bulunan 50 kişilik analiz ekibi ile 7/24 kesintisiz analiz yapılmaktadır.</p>
-        <p>Son 1 yıl baz alındığında Argo Yatırım, yatırımcılarına <span class="highlight">%76 kazanç</span> sağlamıştır.</p>
+        <img src="images/ofis.jpg" alt="Argo Yatırım Ofis">
+        <div class="text">
+            <p>Argo Yatırım, <strong>10.10.2016</strong> tarihinde Hollanda'nın <strong>Cop van Zuit</strong> şehrinde kurulmuştur. 2017 yılında Orta Doğu hakimiyeti için bir ofis de Dubai'de açmıştır.</p>
+            <p>Ufuk Kaplan, Londra borsasına hakim olmasına rağmen tüm dünyadaki borsaları takip etmektedir. Ekibinde bulunan 50 kişilik analiz ekibi ile 7/24 kesintisiz analiz yapılmaktadır.</p>
+        </div>
     </div>
 </section>
 
 <section>
-    <h2>Yatırım ve Destek</h2>
+    <h2>Başarılar</h2>
+    <div class="stats">
+        <div class="stat">
+            <h3>%76</h3>
+            <p>Yatırımcı Kazancı (Son 1 Yıl)</p>
+        </div>
+        <div class="stat">
+            <h3>36 M USD</h3>
+            <p>Yönetilen Yatırım</p>
+        </div>
+        <div class="stat">
+            <h3>130</h3>
+            <p>Profesyonel Kadro</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Yatırım Bilgileri</h2>
     <div class="content">
-        <p>Argo Yatırım, yatırımcılarına sadece kendi işlemlerini değil, uzman ekibiyle beraber anlık analiz ve öneri sağlamaktadır. Her yatırımcı bir ortak olarak görülmektedir. Minimum yatırım portföyü: <strong>30.000 USD</strong>.</p>
-        <p>Şirket, uzman kadrosu ve güçlü analiz altyapısıyla yatırımcılara en güvenli ve karlı deneyimi sunmaktadır.</p>
+        <img src="images/investment.jpg" alt="Yatırım Görsel">
+        <div class="text">
+            <p>Argo Yatırım, yatırımcılarına sadece kendi işlemlerini değil, uzman ekibiyle beraber anlık analiz ve öneri sağlamaktadır. Her yatırımcı bir ortak olarak görülmektedir.</p>
+            <p>Minimum yatırım portföyü: <strong>30.000 USD</strong>.</p>
+        </div>
     </div>
 </section>
 
